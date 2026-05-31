@@ -30,7 +30,6 @@ WORKDIR /app
 RUN useradd --system --uid 1001 --gid 0 nextjs
 COPY --from=builder --chown=nextjs:0 /app/packages/crmcluster-website/.next/standalone ./
 COPY --from=builder --chown=nextjs:0 /app/packages/crmcluster-website/.next/static ./packages/crmcluster-website/.next/static
-COPY --from=builder --chown=nextjs:0 /app/packages/crmcluster-website/public ./packages/crmcluster-website/public
 USER nextjs
 EXPOSE 3000
 CMD ["node", "packages/crmcluster-website/server.js"]
