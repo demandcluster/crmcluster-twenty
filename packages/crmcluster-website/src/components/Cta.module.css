@@ -1,0 +1,82 @@
+.section {
+  background: var(--color-bg);
+}
+
+.card {
+  background:
+    radial-gradient(600px 300px at 90% 0%, rgba(69, 193, 241, 0.35), transparent 60%),
+    linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 64px 56px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0 20px 60px rgba(39, 64, 147, 0.25);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: clamp(28px, 3vw, 40px);
+}
+
+.lede {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 17px;
+  max-width: 520px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.btnLight {
+  background: #ffffff;
+  color: var(--color-primary);
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btnLight:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.btnGhost {
+  height: 56px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btnGhost:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 880px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 40px 28px;
+  }
+}

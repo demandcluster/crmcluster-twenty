@@ -55,6 +55,7 @@
       "packages/twenty-utils",
       "packages/twenty-zapier",
       "packages/twenty-website",
+      "packages/crmcluster-website",
       "packages/twenty-docs",
       "packages/twenty-e2e-testing",
       "packages/twenty-shared",
