@@ -18,18 +18,9 @@ export const Footer = ({ i18n }: FooterProps) => {
         <Column>
           <ShadowText>
             <Link
-              href="https://twenty.com/"
+              href="https://crmcluster.com/"
               value={i18n._('Website')}
-              aria-label={i18n._("Visit Twenty's website")}
-            />
-          </ShadowText>
-        </Column>
-        <Column>
-          <ShadowText>
-            <Link
-              href="https://github.com/twentyhq/twenty"
-              value={i18n._('Github')}
-              aria-label={i18n._("Visit Twenty's GitHub repository")}
+              aria-label={i18n._("Visit CRMCLUSTER's website")}
             />
           </ShadowText>
         </Column>
@@ -52,13 +43,6 @@ export const Footer = ({ i18n }: FooterProps) => {
           </ShadowText>
         </Column>
       </Row>
-      <ShadowText>
-        <>
-          {i18n._('Twenty.com, Public Benefit Corporation')}
-          <br />
-          {i18n._('San Francisco / Paris')}
-        </>
-      </ShadowText>
     </Container>
   );
 };
