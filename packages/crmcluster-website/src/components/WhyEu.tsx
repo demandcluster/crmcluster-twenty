@@ -15,7 +15,7 @@ const POINTS = [
   },
   {
     h: 'Dutch engineering, EU SLA',
-    p: 'Based in the Netherlands as part of Demand Cluster. Direct line to the team that builds and runs your CRM.',
+    p: 'Based in the Netherlands as part of Demandcluster. Direct line to the team that builds and runs your CRM.',
   },
 ];
 

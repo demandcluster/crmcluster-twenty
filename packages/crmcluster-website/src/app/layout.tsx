@@ -13,7 +13,7 @@ const inter = Inter({
 
 const SITE_TITLE = 'CRM Cluster — EU-hosted CRM, powered by Twenty';
 const SITE_DESCRIPTION =
-  'CRM Cluster builds custom AI-driven CRM solutions on top of Twenty, hosted in a private European cloud. Part of Demand Cluster, based in the Netherlands.';
+  'CRM Cluster builds custom AI-driven CRM solutions on top of Twenty, hosted in a private European cloud. Part of Demandcluster, based in the Netherlands.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://crmcluster.com'),
@@ -28,7 +28,11 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_NL',
   },
-  twitter: { card: 'summary_large_image', title: SITE_TITLE, description: SITE_DESCRIPTION },
+  twitter: {
+    card: 'summary_large_image',
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
   robots: { index: true, follow: true },
 };
 

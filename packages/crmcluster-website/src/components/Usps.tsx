@@ -13,7 +13,7 @@ const USPS = [
   },
   {
     title: 'AI-native by default',
-    body: 'Backed by Demand Cluster, we embed pragmatic AI — assistants, enrichment, automation — into your daily CRM workflow.',
+    body: 'Backed by Demandcluster, we embed pragmatic AI — assistants, enrichment, automation — into your daily CRM workflow.',
     icon: 'AI',
   },
   {
@@ -31,8 +31,8 @@ export const Usps = () => (
         <h2>One CRM platform. Built around your business.</h2>
         <p className={styles.lede}>
           We don&apos;t resell a generic SaaS. CRM Cluster ships a private,
-          fully-managed CRM tailored to your sales motion — with AI built in
-          and your data safely in Europe.
+          fully-managed CRM tailored to your sales motion — with AI built in and
+          your data safely in Europe.
         </p>
       </div>
       <div className={styles.grid}>

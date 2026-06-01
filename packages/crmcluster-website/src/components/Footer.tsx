@@ -29,21 +29,31 @@ export const Footer = () => (
           <a href="https://twenty.com" target="_blank" rel="noreferrer">
             Powered by Twenty
           </a>
-          <a href="https://github.com/twentyhq/twenty" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/twentyhq/twenty"
+            target="_blank"
+            rel="noreferrer"
+          >
             Twenty on GitHub
           </a>
         </div>
         <div>
           <h4>Company</h4>
-          <a href="https://www.demandcluster.com" target="_blank" rel="noreferrer">
-            Demand Cluster
+          <a
+            href="https://www.demandcluster.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Demandcluster
           </a>
           <a href="mailto:hello@crmcluster.com">Contact</a>
         </div>
       </div>
     </div>
     <div className={`container ${styles.bottom}`}>
-      <span>© {new Date().getFullYear()} CRM Cluster. All rights reserved.</span>
+      <span>
+        © {new Date().getFullYear()} CRM Cluster. All rights reserved.
+      </span>
       <span>Powered by Twenty · Hosted in the EU</span>
     </div>
   </footer>
