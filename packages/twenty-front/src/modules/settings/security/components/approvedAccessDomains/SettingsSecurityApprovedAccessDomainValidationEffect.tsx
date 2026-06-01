@@ -56,9 +56,14 @@ export const SettingsSecurityApprovedAccessDomainValidationEffect = () => {
         },
       });
     }
-    // Validate approved access domain only needs to run once at mount
-    // oxlint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [
+    validationToken,
+    approvedAccessDomainId,
+    validateApprovedAccessDomainMutation,
+    setApprovedAccessDomains,
+    enqueueSuccessSnackBar,
+    enqueueErrorSnackBar,
+  ]);
 
   return <></>;
 };
