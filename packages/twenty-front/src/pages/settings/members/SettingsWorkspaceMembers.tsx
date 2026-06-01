@@ -5,6 +5,7 @@ import { IconLock, IconUserPlus, IconUsers } from 'twenty-ui/display';
 
 import { useHasPermissionFlag } from '@/settings/roles/hooks/useHasPermissionFlag';
 import { SettingsPageContainer } from '@/settings/components/SettingsPageContainer';
+import { SettingsSecurityApprovedAccessDomainValidationEffect } from '@/settings/security/components/approvedAccessDomains/SettingsSecurityApprovedAccessDomainValidationEffect';
 import { SubMenuTopBarContainer } from '@/ui/layout/page/components/SubMenuTopBarContainer';
 import { TabList } from '@/ui/layout/tab-list/components/TabList';
 import { activeTabIdComponentState } from '@/ui/layout/tab-list/states/activeTabIdComponentState';
@@ -65,6 +66,7 @@ export const SettingsWorkspaceMembers = () => {
       ]}
     >
       <SettingsPageContainer>
+        <SettingsSecurityApprovedAccessDomainValidationEffect />
         <TabList tabs={tabs} componentInstanceId={MEMBERS_TAB_LIST_ID} />
         {renderActiveTabContent()}
       </SettingsPageContainer>

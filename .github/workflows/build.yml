@@ -16,6 +16,13 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - id: version
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
+            echo "value=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=$(node -p "require('./package.json').version")-${GITHUB_SHA::7}" >> "$GITHUB_OUTPUT"
+          fi
       - uses: docker/build-push-action@v6
         with:
           context: .
@@ -23,3 +30,5 @@ jobs:
           target: twenty
           push: true
           tags: ghcr.io/demandcluster/crmcluster-twenty:${{ github.ref_name }}
+          build-args: |
+            APP_VERSION=${{ steps.version.outputs.value }}

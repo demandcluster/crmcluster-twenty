@@ -5,7 +5,6 @@ import { SettingsPath } from 'twenty-shared/types';
 import { SettingsCard } from '@/settings/components/SettingsCard';
 import { SettingsListCard } from '@/settings/components/SettingsListCard';
 import { SettingsSecurityApprovedAccessDomainRowDropdownMenu } from '@/settings/security/components/approvedAccessDomains/SettingsSecurityApprovedAccessDomainRowDropdownMenu';
-import { SettingsSecurityApprovedAccessDomainValidationEffect } from '@/settings/security/components/approvedAccessDomains/SettingsSecurityApprovedAccessDomainValidationEffect';
 import { approvedAccessDomainsState } from '@/settings/security/states/ApprovedAccessDomainsState';
 import { useSnackBarOnQueryError } from '@/apollo/hooks/useSnackBarOnQueryError';
 import { styled } from '@linaria/react';
@@ -70,7 +69,6 @@ export const SettingsApprovedAccessDomainsListCard = () => {
     </StyledLinkContainer>
   ) : (
     <>
-      <SettingsSecurityApprovedAccessDomainValidationEffect />
       <SettingsListCard
         items={approvedAccessDomains}
         getItemLabel={({ domain }) => domain}
